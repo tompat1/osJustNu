@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Milano Cortina 2026 | Sweden Focus Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div>
+          <p class="eyebrow">Milano Cortina 2026 · Sweden Focus</p>
+          <h1>Olympic Winter Games Live Intelligence</h1>
+          <p class="subhead">
+            Aggregated coverage for Sweden: real-time medals, results, schedules, and streaming.
+          </p>
+        </div>
+        <div class="header-meta">
+          <div class="live-indicator">
+            <span class="pulse"></span>
+            Live updates
+          </div>
+          <div class="time-block">
+            <p>Last refresh</p>
+            <strong id="last-refresh">--:--</strong>
+          </div>
+          <button class="primary">Follow Sweden</button>
+        </div>
+      </header>
+
+      <section class="kpi-grid">
+        <article class="kpi">
+          <p>Sweden medals</p>
+          <h2>14</h2>
+          <span>Gold 5 · Silver 4 · Bronze 5</span>
+        </article>
+        <article class="kpi">
+          <p>Events live now</p>
+          <h2>6</h2>
+          <span>Across 4 sports</span>
+        </article>
+        <article class="kpi">
+          <p>Upcoming Swedish starts</p>
+          <h2>11</h2>
+          <span>Next: 13:45 CET</span>
+        </article>
+        <article class="kpi">
+          <p>Streaming options</p>
+          <h2>8</h2>
+          <span>SVT Play · Discovery+ · Eurosport</span>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="card large">
+          <header>
+            <h3>Live medal tracker</h3>
+            <p>Updated from official OCOG feeds and trusted sports desks.</p>
+          </header>
+          <div class="medal-table">
+            <div class="table-row header">
+              <span>Rank</span>
+              <span>Nation</span>
+              <span>Gold</span>
+              <span>Silver</span>
+              <span>Bronze</span>
+              <span>Total</span>
+            </div>
+            <div class="table-row highlight">
+              <span>3</span>
+              <span>Sweden</span>
+              <span>5</span>
+              <span>4</span>
+              <span>5</span>
+              <span>14</span>
+            </div>
+            <div class="table-row">
+              <span>1</span>
+              <span>Norway</span>
+              <span>9</span>
+              <span>4</span>
+              <span>5</span>
+              <span>18</span>
+            </div>
+            <div class="table-row">
+              <span>2</span>
+              <span>Germany</span>
+              <span>6</span>
+              <span>6</span>
+              <span>4</span>
+              <span>16</span>
+            </div>
+            <div class="table-row">
+              <span>4</span>
+              <span>USA</span>
+              <span>4</span>
+              <span>3</span>
+              <span>6</span>
+              <span>13</span>
+            </div>
+          </div>
+          <footer class="card-footer">
+            <button class="ghost">Download full table</button>
+            <div class="meta">Next medal event: Women’s biathlon relay · 15:10 CET</div>
+          </footer>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Sweden news radar</h3>
+            <p>Curated from federations, broadcasters, and leading sports desks.</p>
+          </header>
+          <ul class="news-list">
+            <li>
+              <span class="tag">Breaking</span>
+              <div>
+                <h4>Skicross squad announces final lineup after training run</h4>
+                <p>Coaches confirm Holmgren replaces Lind in heat 3. Updated 12 min ago.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tag">Interview</span>
+              <div>
+                <h4>"We feel the ice" - Swedish curling team confident ahead of semifinal</h4>
+                <p>Skip Ekström says the sweep is "the best it's been" this season.</p>
+              </div>
+            </li>
+            <li>
+              <span class="tag">Analysis</span>
+              <div>
+                <h4>Nordic combined medal math: what Sweden needs tonight</h4>
+                <p>Explainer on points needed for a podium finish in the team format.</p>
+              </div>
+            </li>
+          </ul>
+          <button class="ghost">Open full news feed</button>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Live results</h3>
+            <p>Real-time scoring from timing partners and official results services.</p>
+          </header>
+          <div class="results">
+            <div class="result">
+              <div>
+                <h4>Ice Hockey · SWE vs CAN</h4>
+                <p>Period 2 · 08:21 left</p>
+              </div>
+              <strong>2 - 1</strong>
+            </div>
+            <div class="result">
+              <div>
+                <h4>Cross-country · Women 10km</h4>
+                <p>Split 7 · Frida Karlsson</p>
+              </div>
+              <strong>+3.2s</strong>
+            </div>
+            <div class="result">
+              <div>
+                <h4>Snowboard · Slopestyle</h4>
+                <p>Final run · Jennie Söder</p>
+              </div>
+              <strong>84.40</strong>
+            </div>
+          </div>
+          <button class="ghost">See all live results</button>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Upcoming Swedish starts</h3>
+            <p>Auto-sorted by start time in Italy (CET).</p>
+          </header>
+          <ul class="schedule" id="schedule"></ul>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Where to watch live</h3>
+            <p>Streaming, TV, and highlight access for Swedish audiences.</p>
+          </header>
+          <div class="streams">
+            <div>
+              <h4>SVT Play</h4>
+              <p>Daily live windows + Swedish commentary.</p>
+            </div>
+            <div>
+              <h4>Discovery+</h4>
+              <p>All feeds + multi-camera ice hockey streams.</p>
+            </div>
+            <div>
+              <h4>Eurosport</h4>
+              <p>Expert analysis, medal ceremonies, mixed zone interviews.</p>
+            </div>
+          </div>
+          <button class="ghost">Customize streaming alerts</button>
+        </article>
+
+        <article class="card">
+          <header>
+            <h3>Top things in Italy</h3>
+            <p>Trending venues, activations, and crowd energy around Sweden.</p>
+          </header>
+          <ol class="top-things">
+            <li>FIS Nordic hub at Val di Fiemme buzzing for Sweden warmup.</li>
+            <li>Milano fan zone spotlighting Swedish para-ice hockey demo.</li>
+            <li>Cortina mountain village hosting Nordic hospitality summit.</li>
+          </ol>
+          <button class="ghost">Explore fan guide</button>
+        </article>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
