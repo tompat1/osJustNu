@@ -9,3 +9,10 @@ python -m http.server 8000
 ```
 
 Then visit `http://localhost:8000/` (or the forwarded port in your environment).
+
+## Testing
+Run the lightweight smoke test to confirm the dashboard wiring is in place:
+
+```bash
+node scripts/smoke-test.js
+```
