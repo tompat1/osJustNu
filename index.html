@@ -25,6 +25,10 @@
             <p>Last refresh</p>
             <strong id="last-refresh">--:--</strong>
           </div>
+          <div class="feed-status" aria-live="polite">
+            <p>ESPN feeds</p>
+            <ul id="feed-status"></ul>
+          </div>
           <button class="primary">Follow Sweden</button>
         </div>
       </header>
@@ -37,13 +41,13 @@
         </article>
         <article class="kpi">
           <p>Events live now</p>
-          <h2>6</h2>
-          <span>Across 4 sports</span>
+          <h2 id="live-count">--</h2>
+          <span id="live-detail">Waiting for ESPN</span>
         </article>
         <article class="kpi">
           <p>Upcoming Swedish starts</p>
-          <h2>11</h2>
-          <span>Next: 13:45 CET</span>
+          <h2 id="upcoming-count">--</h2>
+          <span id="upcoming-detail">Queueing ESPN schedules</span>
         </article>
         <article class="kpi">
           <p>Streaming options</p>
@@ -111,29 +115,7 @@
             <h3>Sweden news radar</h3>
             <p>Curated from federations, broadcasters, and leading sports desks.</p>
           </header>
-          <ul class="news-list">
-            <li>
-              <span class="tag">Breaking</span>
-              <div>
-                <h4>Skicross squad announces final lineup after training run</h4>
-                <p>Coaches confirm Holmgren replaces Lind in heat 3. Updated 12 min ago.</p>
-              </div>
-            </li>
-            <li>
-              <span class="tag">Interview</span>
-              <div>
-                <h4>"We feel the ice" - Swedish curling team confident ahead of semifinal</h4>
-                <p>Skip Ekström says the sweep is "the best it's been" this season.</p>
-              </div>
-            </li>
-            <li>
-              <span class="tag">Analysis</span>
-              <div>
-                <h4>Nordic combined medal math: what Sweden needs tonight</h4>
-                <p>Explainer on points needed for a podium finish in the team format.</p>
-              </div>
-            </li>
-          </ul>
+          <ul class="news-list" id="news-list"></ul>
           <button class="ghost">Open full news feed</button>
         </article>
 
@@ -142,29 +124,7 @@
             <h3>Live results</h3>
             <p>Real-time scoring from timing partners and official results services.</p>
           </header>
-          <div class="results">
-            <div class="result">
-              <div>
-                <h4>Ice Hockey · SWE vs CAN</h4>
-                <p>Period 2 · 08:21 left</p>
-              </div>
-              <strong>2 - 1</strong>
-            </div>
-            <div class="result">
-              <div>
-                <h4>Cross-country · Women 10km</h4>
-                <p>Split 7 · Frida Karlsson</p>
-              </div>
-              <strong>+3.2s</strong>
-            </div>
-            <div class="result">
-              <div>
-                <h4>Snowboard · Slopestyle</h4>
-                <p>Final run · Jennie Söder</p>
-              </div>
-              <strong>84.40</strong>
-            </div>
-          </div>
+          <div class="results" id="results"></div>
           <button class="ghost">See all live results</button>
         </article>
 

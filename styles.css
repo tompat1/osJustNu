@@ -67,6 +67,39 @@ body {
   text-align: right;
 }
 
+.feed-status {
+  font-size: 0.75rem;
+  color: var(--muted);
+  background: rgba(25, 37, 62, 0.6);
+  border-radius: 14px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.feed-status p {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.feed-status ul {
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.feed-status li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.feed-status span {
+  color: var(--text);
+}
+
 .primary {
   background: var(--accent-strong);
   color: var(--text);
